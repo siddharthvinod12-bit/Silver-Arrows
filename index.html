@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="copper">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -7,14 +7,7 @@
   <meta name="description" content="Silver Arrows is a student STEM Racing team. We design, build and race miniature cars. Sponsor us.">
   <meta name="theme-color" content="#000000">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-  <script>
-    // Apply the saved colour theme before the page paints (no flash).
-    (function () {
-      var d = document.documentElement;
-      d.classList.add('js');
-      try { var t = localStorage.getItem('sa-theme'); if (t) d.dataset.theme = t; } catch (e) {}
-    })();
-  </script>
+  <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,7 +15,6 @@
 <!-- Icon set. Stroke widths match the text weight they sit next to. -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
-    <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 1.8-.8 1.8-1.7 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-1 .8-1.7 1.8-1.7H17a4 4 0 0 0 4-4C21 6.6 17 3 12 3Z"/><circle cx="7.5" cy="11" r="1.2"/><circle cx="10.5" cy="7" r="1.2"/><circle cx="15" cy="7.5" r="1.2"/></symbol>
     <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
     <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
     <symbol id="i-chev-r" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
@@ -55,9 +47,6 @@
       <a href="#contact">Contact</a>
     </nav>
     <div class="nav-actions">
-      <button class="icon-btn theme-btn" aria-haspopup="dialog" aria-expanded="false" aria-controls="theme-pop" aria-label="Change colour theme">
-        <svg class="ic"><use href="#i-palette"/></svg>
-      </button>
       <button class="icon-btn menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
         <svg class="ic swap swap-a"><use href="#i-menu"/></svg>
         <svg class="ic swap swap-b"><use href="#i-close"/></svg>
@@ -65,24 +54,6 @@
     </div>
   </div>
 
-  <div id="theme-pop" class="theme-pop" role="dialog" aria-label="Colour theme" data-open="false">
-    <p class="pop-title">Colour theme</p>
-    <div class="swatches" role="radiogroup" aria-label="Colour theme">
-      <button class="swatch" role="radio" data-set="copper"><span class="chip" data-theme="copper"></span>Silver &amp; Copper</button>
-      <button class="swatch" role="radio" data-set="sky"><span class="chip" data-theme="sky"></span>Sky &amp; Hot Pink</button>
-      <button class="swatch" role="radio" data-set="midnight"><span class="chip" data-theme="midnight"></span>Midnight Volt</button>
-      <button class="swatch" role="radio" data-set="deepblue"><span class="chip" data-theme="deepblue"></span>Deep Blue &amp; Pink</button>
-      <button class="swatch" role="radio" data-set="mandarin"><span class="chip" data-theme="mandarin"></span>Mandarin &amp; Forest</button>
-      <button class="swatch" role="radio" data-set="onyx"><span class="chip" data-theme="onyx"></span>Onyx &amp; Indigo</button>
-      <button class="swatch" role="radio" data-set="seal"><span class="chip" data-theme="seal"></span>Navy &amp; Crimson</button>
-      <button class="swatch" role="radio" data-set="cloud"><span class="chip" data-theme="cloud"></span>Sky &amp; Amber</button>
-      <button class="swatch" role="radio" data-set="blaze"><span class="chip" data-theme="blaze"></span>Red Orange &amp; Punk</button>
-      <button class="swatch" role="radio" data-set="sapphire"><span class="chip" data-theme="sapphire"></span>Sapphire &amp; Jade</button>
-      <button class="swatch" role="radio" data-set="teal"><span class="chip" data-theme="teal"></span>Teal &amp; Magenta</button>
-      <button class="swatch" role="radio" data-set="linen"><span class="chip" data-theme="linen"></span>Linen &amp; Psychedelic</button>
-      <button class="swatch" role="radio" data-set="moon"><span class="chip" data-theme="moon"></span>Moonlight &amp; Lemon</button>
-    </div>
-  </div>
 </header>
 
 <main id="main">
@@ -131,7 +102,7 @@
         <path d="M140 210c6-52 40-84 120-92 120-12 250-6 360 10 120 18 250 52 380 86 52 14 92 28 118 40l-8 20c-150 6-640 8-930 2-30-6-44-30-40-66Z" fill="url(#body)"/>
         <!-- cockpit fairing -->
         <path d="M430 128c40-34 120-44 190-30 30 6 52 20 66 38-90-10-170-12-256-8Z" fill="#2b2e33"/>
-        <!-- arrow decal (uses the theme accent) -->
+        <!-- arrow decal (uses the accent colour) -->
         <path class="decal" d="M300 196h360l70 22-70 22H300l34-22z"/>
         <path class="decal-line" d="M760 214h260" />
         <!-- cartridge chamber -->
