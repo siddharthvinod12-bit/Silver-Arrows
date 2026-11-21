@@ -10,6 +10,7 @@ Claude Code loads these automatically in any session opened on this repo. Each f
 | `archify` | [tt-a1i/archify](https://github.com/tt-a1i/archify) | `8509a3d` | Apache-2.0 / MIT | Interactive architecture and workflow diagrams |
 | `planning-with-files` | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) | `7673790` | MIT | Plans kept in task_plan.md for long tasks |
 | `img2threejs` | [img2threejs/img2threejs](https://github.com/img2threejs/img2threejs) | `0c0c49b` | Apache-2.0 | Turning a photo (e.g. the car) into a 3D Three.js model |
+| `ux-motion` | supplied by the team | — | — | 20 animation and UX rules with exact timings |
 | `distilly` | [titanwings/distilly](https://github.com/titanwings/distilly) | `0afc45c` | MIT | Owner / person profiles for agents |
 
 ## Hooks
@@ -21,3 +22,6 @@ Re-copy the folder from the source repo and update the commit in the table.
 
 ## Not installed
 From the same list: the apps (Expo, Chatwoot, OpenProject, AppFlowy, Cal.diy, Cap, OpenWhispr, VoiceStudio, open-seo, open-higgsfield, Paperclip, Cognee, MarkItDown) are full programs, not skills. alirezarezvani/claude-skills (~500 skills) and nexu-io/open-design (~560) are too large to add wholesale. Pick the few you want. VoltAgent/awesome-design-md is a collection of DESIGN.md files, not a skill.
+
+## Design reference
+`.claude/design/apple.DESIGN.md` is the Apple design analysis from [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md) (commit `fcc7028`, MIT). The site's look is based on it, with copper as the accent instead of Apple blue.
